@@ -8,6 +8,7 @@ let store = createStore({
 const action = store.action
 
 function openScanDialog (state) {
+  console.log("open dialog")
   state.scandialog.open = true
 }
 

@@ -24,6 +24,7 @@ const ScanDialog = () => {
   });
   return (
     <mwc-dialog ref={dialog} id="scandialog">
+       <div>{content}</div>
        <div id="interactive" class="viewport"></div>
     </mwc-dialog>
   );

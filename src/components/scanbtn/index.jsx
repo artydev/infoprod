@@ -30,7 +30,7 @@ const fabcss2 = b`
 
 function openScanDialog () {
   actions.openScanDialog();
-  alert("Launch Quagga")
+  console.log("Launch Quagga")
 }
 
 const ScanButton = () => {
