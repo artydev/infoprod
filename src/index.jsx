@@ -1,26 +1,25 @@
 /* @jsx h */
 import { h, render, Fragment } from "preact";
 import {store, actions} from "./store";
+import InputCode from "./components/inputcode";
+import "@material/mwc-button";
+import "@material/mwc-drawer";
+import "@material/mwc-top-app-bar";
+import "@material/mwc-icon-button";
+import "@material/mwc-fab";
 
-let Counter = ({ state }) => {
-  return (
-    <Fragment>
-      <h1>Counter : {state.count}</h1>
-      <button onclick = {actions.inc}>INC</button>
-    </Fragment>
-  );
-};
 
 let App = () => (
   <Fragment>
-    <Counter state = {store.getState()} />
+    <mwc-icon-button icon="gesture"></mwc-icon-button>
+    <InputCode state = {store.getState()} actions={actions} />
   </Fragment>
 );
 
-function main() {
+function main () {
   const renderApp = () => render(<App />, root);
   store.subscribe(renderApp);
-  setTimeout(actions.inc, 0);
+  renderApp()
 }
 
 main();

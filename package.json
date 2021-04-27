@@ -10,8 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material/mwc-button": "^0.20.0",
+    "@material/mwc-drawer": "^0.20.0",
+    "@material/mwc-fab": "^0.20.0",
+    "@material/mwc-icon-button": "^0.20.0",
+    "@material/mwc-top-app-bar": "^0.20.0",
+    "bss": "^1.6.4",
     "preact": "^10.5.13",
     "snowpack": "^3.3.5",
-    "unistore": "^3.5.2"
+    "unistore": "^3.5.2",
+    "wicked-elements": "^3.1.1"
   }
 }

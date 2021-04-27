@@ -2,7 +2,7 @@ import createStore from "unistore";
 
 let store = createStore({
   started: false,
-  count: -1
+  count: 0
 });
 
 const action = store.action
