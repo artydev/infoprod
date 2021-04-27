@@ -1,11 +1,13 @@
 /* @jsx h */
 import { h } from "preact";
 import { useEffect, useRef } from "preact/hooks";
-import "@material/mwc-button";
 import "@material/mwc-dialog";
 import "../../store";
 import { store } from "../../store";
 
+// Définition de la fenêtre contenant le scanner
+// On memorise la référence à cette fenêtre dans le
+// store.
 const ScanDialog = ({ content }) => {
   const dialog = useRef(null);
   useEffect(() => {

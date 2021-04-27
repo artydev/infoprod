@@ -20,6 +20,7 @@
     "install": "^0.13.0",
     "npm": "^7.11.1",
     "preact": "^10.5.13",
+    "quagga": "^0.12.1",
     "snowpack": "^3.3.5",
     "unistore": "^3.5.2",
     "wicked-elements": "^3.1.1"

@@ -7,9 +7,17 @@ let store = createStore({
 
 const action = store.action
 
+function openScanDialog (state) {
+  state.scandialog.open = true
+}
+
+function closeScanDialog (state) {
+  state.scandialog.open = false
+}
+
 const actions = {
-  openScanDialog : action((s) => s.scandialog.open = true),
-  closeScanDialog : action((s) => s.scandialog.open = false)
+  openScanDialog : action(openScanDialog),
+  closeScanDialog : action(closeScanDialog)
 };
 
 export { actions, store };

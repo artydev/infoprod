@@ -1,20 +1,19 @@
 /* @jsx h */
 import { h, render, Fragment  } from "preact";
 import "../../infoprod/global.css"
-import {store, actions} from "./store";
-import "@material/mwc-button";
-import "@material/mwc-dialog";
-
+import {store} from "./store";
 import Drawer from "./components/drawer"
 import ScanDialog  from "./components/scandialog"
+import ScanButton from "./components/scanbtn"
 
 let App = () => {
   return (
     <Fragment>
       <Drawer />
-      <mwc-button onclick={actions.openScanDialog}  raised>
-        scan
-      </mwc-button>
+      <main>
+        <div>Content</div>
+        <ScanButton />
+      </main>
       <ScanDialog content="Scanning" />
     </Fragment>
   );
