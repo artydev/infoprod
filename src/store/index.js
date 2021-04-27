@@ -2,14 +2,14 @@ import createStore from "unistore";
 
 let store = createStore({
   started: false,
-  count: 0
+  scandialog: null
 });
 
 const action = store.action
 
 const actions = {
-  start: action((s) => (s.started = true)),
-  inc: action((s) => (s.count += 1)),
+  openScanDialog : action((s) => s.scandialog.open = true),
+  closeScanDialog : action((s) => s.scandialog.open = false)
 };
 
 export { actions, store };
