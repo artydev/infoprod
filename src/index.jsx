@@ -11,10 +11,9 @@ let App = () => {
     <Fragment>
       <Drawer />
       <main>
-        <div>Content</div>
         <ScanButton />
       </main>
-      <ScanDialog content="Scanning" />
+      <ScanDialog  />
     </Fragment>
   );
 };
